@@ -8,8 +8,8 @@ import java.util.List;
 @SuppressWarnings("unused")
 public interface ApplicationService {
     // 添加，或修改申请
-    // 添加返回true，修改返回false
-    boolean addOrUpdateByUuid(@NotNull ApplicationInfo info) throws Exception;
+    // 返回申请ID
+    int addOrUpdateByUuid(@NotNull ApplicationInfo info) throws Exception;
 
     @Nullable ApplicationInfo queryByName(@NotNull String name) throws Exception;
 
