@@ -7,6 +7,10 @@ import java.util.List;
 
 @SuppressWarnings("unused")
 public interface ApplicationService {
+
+    // 检查是否为合法中文名
+    void checkNameValid(@NotNull String name) throws Exception;
+
     // 添加，或修改申请
     // 返回申请ID
     int addOrUpdateByUuid(@NotNull ApplicationInfo info) throws Exception;

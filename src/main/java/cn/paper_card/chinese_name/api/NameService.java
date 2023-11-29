@@ -8,9 +8,6 @@ import java.util.UUID;
 @SuppressWarnings("unused")
 public interface NameService {
 
-    // 检查是否为合法中文名
-    void checkNameValid(@NotNull String name) throws Exception;
-
     // 添加或更新中文名
     boolean addOrUpdateByUuid(@NotNull NameInfo info) throws Exception;
 
