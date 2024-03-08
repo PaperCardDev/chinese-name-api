@@ -6,6 +6,8 @@ public record ApplicationInfo(
         int id,
         UUID uuid,
         String name,
+
+        long coins,
         long time
 ) {
 }
